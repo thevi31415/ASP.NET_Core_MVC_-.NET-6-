@@ -34,6 +34,7 @@ namespace ASP.NET_Core_MVC__.NET_6_.Controllers
                 _db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            TempData["success"] = "Tạo thành công !";
             return View(obj);
 
         }
@@ -67,6 +68,7 @@ namespace ASP.NET_Core_MVC__.NET_6_.Controllers
                 _db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            TempData["success"] = "Update thành công !";
             return View(obj);
 
         }
@@ -104,6 +106,7 @@ namespace ASP.NET_Core_MVC__.NET_6_.Controllers
 
             _db.Categories.Remove(category);
             _db.SaveChanges();
+            TempData["success"] = "Xóa thành công !";
             return RedirectToAction("Index");
 
         }

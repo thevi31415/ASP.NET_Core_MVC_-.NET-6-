@@ -11,7 +11,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 
     ));
 
-
+builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 
 

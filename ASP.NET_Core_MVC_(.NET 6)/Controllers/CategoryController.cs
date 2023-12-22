@@ -13,7 +13,7 @@ namespace ASP.NET_Core_MVC__.NET_6_.Controllers
         }
         public IActionResult Index()
         {
-            IEnumerable<Category> objCategrogyList = _db.Categories.ToList();
+            IEnumerable<Category> objCategrogyList = _db.Categories;
 
             return View(objCategrogyList);
         }
